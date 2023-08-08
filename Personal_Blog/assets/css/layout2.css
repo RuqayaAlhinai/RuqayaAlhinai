@@ -1,0 +1,67 @@
+@import url('./nav.css');
+@import url('./footer.css');
+  .flex-container1 {
+		display: flex;
+	
+     
+        justify-content: center;
+    align-items: center;
+	}
+	
+	.flex-container1 div {
+
+		margin: 10px;
+		padding: 100px;
+	}
+   
+	
+	.flex-container2 {
+	  display: flex;
+	  float: right;
+	}
+	
+	.flex-container2 > div {
+	  background-color: #f1f1f1;
+	  margin: 10px;
+	  padding: 20px;
+	  font-size: 15px;
+	}
+
+	
+.item11 { grid-area: item11; }
+.item22 { grid-area: item22; }
+
+
+.grid-container2 {
+  display: grid;
+  grid-template-areas:
+    
+    'item11 item11 item11 item22 item22 item22';
+   
+  gap: 10px;
+ 
+  padding: 10px;
+}
+
+.grid-container2 > div {
+  background-color: rgba(255, 255, 255, 0.8);
+  text-align: center;
+  padding: 20px 0;
+  font-size:15px;}
+
+
+  .grid-container3 {
+    display: grid;
+    grid-template-rows: auto auto auto;
+    grid-template-columns: 80px 50px;
+    gap: 10px;
+ 
+    padding: 5px;
+  }
+  
+  .grid-container3 > div {
+    background-color: rgba(255, 255, 255, 0.8);
+    text-align: center;
+    padding: 10px 0;
+    font-size: 30px;
+  }

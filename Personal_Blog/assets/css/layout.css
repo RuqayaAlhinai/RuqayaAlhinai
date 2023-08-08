@@ -1,0 +1,83 @@
+@import url('./nav.css');
+@import url('./footer.css');
+@import url('./layout2.css');
+
+
+  body{background-color: #f1f1f1;}
+    
+.item1 { grid-area: header;
+   padding: 30px;
+  font-size: 40px;
+ text-align: left;
+
+  background: white;}
+
+.item2 { grid-area: item2;  float: left;
+  width: 100%;  padding-left: 20px;}
+
+
+.item3 { grid-area: item3;  float: left;
+  width: 100%;}
+
+
+.item4 { grid-area: item4;  padding: 20px;
+  text-align: center;
+  background: white;
+ }
+
+
+.item5 
+{ 
+    grid-area: item5;  float: left;
+    width: 100%;}
+
+.item6 { grid-area: item6;  float: left;
+  width: 100%;  height:70% ; padding-left: 20px;}
+
+.item7 { grid-area: item7;  float: left;
+  width: 100%;  height:70% ; padding-left: 20px;}
+
+
+.grid-container {
+  display: grid;
+  grid-template-areas:
+    'header header header header header header'
+    ' item3 item3 item3 item3 item3 item2'
+    ' item3 item3 item3 item3 item3 item6'
+    ' item5 item5 item5 item5 item5 item6'
+    ' item5 item5 item5 item5 item5 item6'
+    'item4 item4 item4 item4 item4 item4';
+  gap: 20px;
+  background-color: #f1f1f1;
+  padding: 20px;
+}
+
+.grid-container > div {
+  background-color: white;
+  text-align: center;
+ padding: 15px 0;
+  /*font-size: 30px;*/
+}
+@media screen and (max-width: 800px) {
+  .item2,.item3,.item7 ,.item5,.item6 {   
+    width: 100%;
+    padding: 0;
+  }
+
+ }
+ 
+.card {
+   background-color: white;
+   padding: 10px;
+   margin-top: 20px;}
+
+   .button {
+  position: absolute;
+  background-color:#0a0a23;
+  color: #fff;
+  border:none; 
+  border-radius:10px; 
+  padding:4px;
+  min-height:10px; 
+  min-width: 100px;}
+ 
